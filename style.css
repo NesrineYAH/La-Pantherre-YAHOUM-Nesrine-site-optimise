@@ -196,6 +196,7 @@ a:hover {
 .d-bloc .panel,
 .l-bloc {
   color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
 }
 
 .d-bloc .panel button:hover,
@@ -285,6 +286,7 @@ a:hover {
 
 #bloc-1-hero h1 {
   font-size: 32px;
+  margin-left: 16px;
 }
 
 .navbar {
@@ -509,8 +511,25 @@ button {
 .form-control {
   border-color: rgba(0, 0, 0, 0.1);
   box-shadow: none;
+  max-width: 100%;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 15px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
+textarea.form-control {
+  height: auto;
+}
 .scrollToTop {
   width: 40px;
   height: 40px;
@@ -653,7 +672,6 @@ label,
 a {
   font-family: "helvetica";
   font-weight: 400;
-  color: #000000 !important;
 }
 
 blockquote {
@@ -669,6 +687,8 @@ blockquote {
 .hero-bloc-text {
   font-size: 40px;
   color: #000000 !important;
+  margin-left: 90px;
+  font-weight: bold;
 }
 
 .hero-bloc-text-sub {
@@ -686,19 +706,19 @@ blockquote {
 }
 
 p {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .tight-width-whitespace {
   max-width: 700px;
   margin: auto auto auto auto;
+  font-weight: 500;
 }
 
 .h1 {
   font-size: 24px;
   font-family: "Open Sans";
 }
-
 .cta-hero {
   margin-top: 22px;
   color: #ffffff !important;
@@ -782,8 +802,13 @@ h4 {
   font-weight: bold;
 }
 .row {
+  max-width: 90%;
   display: flex;
   justify-content: center;
+}
+
+.col-sm-6 {
+  margin-left: 80px;
 }
 .btn-atomic-tangerine {
   background: #f3976c;
@@ -817,7 +842,7 @@ h4 {
 }
 
 .bg-dots-bg {
-  background-image: url("img/dots-bg.png");
+  background-image: url("./img/agence-la-panthere.jpg");
 }
 
 .bg-lines-h2-bg {
@@ -850,7 +875,7 @@ h4 {
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
-  .navbar .nav {
+  .navbar-row .nav {
     max-width: 80%;
   }
   .nav-center.navbar .nav {
@@ -918,12 +943,12 @@ h4 {
   .b-parallax {
     background-attachment: scroll;
   }
-  .navbar .nav {
+  .navbar-row .nav {
     padding-top: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     float: none !important;
   }
-  .navbar.row {
+  .navbar-row {
     margin-left: 0;
     margin-right: 0;
   }

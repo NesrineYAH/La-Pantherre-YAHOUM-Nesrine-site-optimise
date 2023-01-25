@@ -3314,6 +3314,7 @@ fieldset[disabled] .radio label {
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
+  min-width: 70%;
 }
 
 .form-control-static.input-lg,
