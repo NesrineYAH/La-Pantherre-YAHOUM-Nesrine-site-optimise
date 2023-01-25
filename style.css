@@ -653,15 +653,22 @@ label,
 a {
   font-family: "helvetica";
   font-weight: 400;
-  color: #575757 !important;
+  color: #000000 !important;
 }
 
+blockquote {
+  color: #000000 !important;
+}
+.author {
+  font-size: 16px;
+}
 .container {
-  max-width: 1000px;
+  max-width: 100%;
 }
 
 .hero-bloc-text {
-  font-size: 38px;
+  font-size: 40px;
+  color: #000000 !important;
 }
 
 .hero-bloc-text-sub {
@@ -679,16 +686,16 @@ a {
 }
 
 p {
-  font-size: 11px;
+  font-size: 20px;
 }
 
 .tight-width-whitespace {
-  max-width: 600px;
+  max-width: 700px;
   margin: auto auto auto auto;
 }
 
 .h1 {
-  font-size: 20px;
+  font-size: 24px;
   font-family: "Open Sans";
 }
 
@@ -705,14 +712,12 @@ p {
   max-width: 400px;
   margin: auto auto auto auto;
 }
-
 h2 {
-  font-size: 22px;
+  font-size: 24px;
   line-height: 1.4em;
 }
-
 h3 {
-  font-size: 15px;
+  font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
   color: #333333 !important;
@@ -722,10 +727,6 @@ h3 {
   max-width: 800px;
   margin: auto auto auto auto;
   box-shadow: 0px 0px 0px #000000;
-}
-
-h1 {
-  color: #333333 !important;
 }
 
 h4 {
@@ -778,8 +779,12 @@ h4 {
 
 .tc-white {
   color: #ffffff !important;
+  font-weight: bold;
 }
-
+.row {
+  display: flex;
+  justify-content: center;
+}
 .btn-atomic-tangerine {
   background: #f3976c;
   color: #ffffff !important;
@@ -825,6 +830,9 @@ h4 {
 
 .bg-presentation {
   background-image: url("img/image-de-presentation.bmp");
+}
+.fa-reseau {
+  font-size: 30px;
 }
 
 @media (max-width: 1024px) {
@@ -875,8 +883,8 @@ h4 {
     position: relative;
   }
   .bloc {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
+    padding-left: 0;
+    padding-right: 20px;
   }
   .bloc-group,
   .bloc-group .bloc {
@@ -886,8 +894,8 @@ h4 {
   .bloc-fill-screen .fill-bloc-top-edge,
   .bloc-fill-screen .fill-bloc-bottom-edge {
     padding: 0 20px;
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
