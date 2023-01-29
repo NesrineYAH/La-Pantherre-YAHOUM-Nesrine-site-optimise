@@ -684,6 +684,8 @@ a {
 p {
   font-size: 14px;
   font-weight: 700;
+  margin-top: 10px;
+  margin-left: 50px;
 }
 .bloc-services {
   padding: 0 50px;
@@ -787,7 +789,7 @@ h4 {
 .bgc-atomic-tangerine {
   background-color: #f6a783;
   color: #fff !important;
-  padding: 100px;
+  padding: 50px;
 }
 
 .tc-white {
