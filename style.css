@@ -433,6 +433,9 @@ nav .caret {
   margin: 6px -5px 0 0 !important;
   float: right;
 }
+.text-quote {
+  color: #575757 !important;
+}
 
 .mg-md {
   margin-top: 50px;
